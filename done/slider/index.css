@@ -1,0 +1,456 @@
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, Geneva, sans-serif;
+      text-decoration: none;
+      list-style-type: none;
+    }        
+    @font-face {
+      font-family: 'Bebas Neue Bold';
+      src: url(fonts/bebas-neue-bold.ttf); 
+    }
+    @font-face {
+      font-family: 'Proxima Nova'; 
+      src: url(fonts/Proxima Nova Bold.otf); 
+    }
+    body{   
+      font-size: 13px;
+      background-color: #efefef;
+    } 
+    header{
+      line-height: 7em;
+      font-size: 1.5em;
+      text-align: center;
+      border-top: 0.5em solid #ffd200;
+      margin-bottom: 4.3%;
+    }
+    .be_slim{
+      position: relative;
+    }
+    .slim_wrap{
+      background-color: #fed104;
+      height: 379px;
+    }
+    .left{
+      float: left;
+      width: 30%;
+      margin-left: 9%;
+      margin-top: 2.6%;
+      font-size: 1.5em;
+      line-height: 1em;
+    }
+    h2{
+      font-family: 'Bebas Neue Bold';
+      font-size: 2.7em;
+      line-height: 1em;
+      color: #010000;
+      border-bottom: groove 2px #dddddd;
+      padding-bottom: 5%;
+    }
+    .left p{
+      margin-top: 5%;
+      margin-left: 1%;
+    }
+    .left ul{
+      margin-left: 1%;
+      margin-top: 5%;
+    }
+    .left li{
+      line-height: 1.3em;
+    }
+    .left li img{
+      margin-right: 2%;
+    }
+    a{
+      display: inline-block;
+      margin-left: -5%;
+      margin-top: -4.6%;
+    }
+    .orange{
+      position: absolute;
+      top: 81%;
+      left: 25%;
+    }
+    form{
+      display: inline-block;
+    }
+    fieldset{
+      position: absolute;
+      top: -0.2%;
+      font-size: 1.5em;
+      width: 24.3%;
+      left: 70%;
+      text-align: center;
+      background-color: #3c3636;    
+    }
+    fieldset span{
+      color: white;
+      display: inline-block;
+      padding-top: 6%;
+    }
+    strong{
+      color: #ffd200;
+      font-size: 2.3em;
+    }
+    #date{
+      display: inline-block;
+    }
+    .date{
+      color: white;
+      font-size: 0.8em;
+    }
+    input{
+      line-height: 2.8em;
+      margin-bottom: 5%;
+      width: 80%;
+      font-size: 1em;
+      padding-left: 5%;
+    }
+    input:nth-of-type(3){
+      width: 87%;
+      line-height: 3.1em;
+      background: linear-gradient(0deg, #91193c, #ff78a0);
+      color: white;
+      margin-bottom: 7%;
+    }
+    .ten_days{
+      display: inline-block;
+      text-align: center;
+      width: 32%;
+      margin-top: 6.6%;
+      font-size: 1.9em;
+      margin-left: 34%;
+      font-family: 'Proxima Nova';
+      float: left;
+    }
+    .pointer{
+      display: inline-block;
+      margin-left: 4%;
+    }
+    .people{
+      border-top: solid 1px #dfdfdf;
+      width: 96%;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-top: 5.5%;
+    }
+    .name{
+      margin-top: 7%;
+      border-top: solid 1px yellow;
+    }
+    .name img{
+      display: block;
+    }
+    .name p{
+      margin-top: 5%;
+      margin-bottom: -7%;
+      font-size: 1.2em;
+    }
+    .sliderB {
+      width: 100%;
+      height: 250px;
+      position: relative;
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-top: 4%;
+    }
+    figure{
+      display: inline-block;
+      width: 43.5%;
+      margin-left: 3%;
+      margin-right: 2.5%;
+      vertical-align: top;
+    }
+    figcaption{
+      font-size: 1.3em;
+      display: inline-block;
+      width: 62%;
+      vertical-align: top;
+      margin-left: 3.5%;
+      line-height: 1.35em;
+    }
+    .sliderB > input {
+      display: none;
+    }        
+    .sliderB > input:checked + div + label,
+    .sliderB > input:checked + div + label + label{
+      display: block;
+      width: 19px;
+      height: 80px;
+      cursor: pointer;
+      position: absolute;
+      top: 34%;
+      transform: translateY(-50%);   
+    }   
+    .sliderB > input:checked + div + label {
+      left: -8px;
+    }      
+    .sliderB > input:checked + div + label + label {
+      right: -8px;
+    }    
+    .sliderB > div {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      opacity: 0;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+    .sliderB > input:checked + div {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+    .left_pointer{
+      background-image: url(image/pointer_left.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .right_pointer{
+      background-image: url(image/pointer_right.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @media all and (min-width:1200px) and (max-width:1300px){
+     input{
+      margin-bottom: 6%;
+    }
+    .photo{
+      width: 165px;
+    }
+  }
+  @media all and (min-width:1000px) and (max-width:1199px){
+    fieldset{       
+      font-size: 1.2em;
+      margin-top: 2%;
+    }
+    input{
+      margin-bottom: 13%;
+    }
+    strong{
+      font-size: 1.5em;
+    }
+    main a img{
+      width: 70%;
+      margin-left: 5%;
+      margin-top: 10%;
+    }
+    .left{
+      font-size: 1.3em;
+    }
+    .orange img{
+      width: 85%;
+    }
+    .ten_days{
+      width: 40%;
+    }
+    .pointer{
+      margin-left: 0;
+    }
+    .photo{
+      width: 165px;
+    }
+    figcaption{
+      font-size: 1.1em;
+      width: 55%;
+    }
+    .name p{
+      font-size: 1.1em;
+    }
+  }
+  @media all and (min-width:750px) and (max-width:999px){
+    fieldset{       
+      font-size: 1.2em;
+      margin-top: 2%;
+      left: 72%;
+    }
+    input{
+      margin-bottom: 13%;
+    }
+    strong{
+      font-size: 1.5em;
+    }
+    main a img{
+      width: 130%;
+      margin-left: 0;
+      margin-top: 11%;
+    }
+    .left{
+      font-size: 1.2em;
+      width: 24%;
+      margin-left: 6%;
+    }
+    a{
+      width: 300px;
+      margin-left: -1%;
+    }
+    .orange img{
+      width: 65%;
+    }
+    .ten_days{
+      width: 40%;
+      font-size: 1.5em;
+    }
+    .pointer{
+      margin-left: -47px;
+    }
+    .slim_wrap{
+      height: 347px;
+    }
+    .photo{
+      width: 120px;
+    }
+    figcaption{
+      font-size: 0.9em;
+      width: 55%;
+    }
+    .name p{
+      font-size: 1.1em;
+    }
+  }
+  @media all and (min-width:520px) and (max-width:749px){
+    header{
+      line-height: 4em;
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+    h2{
+      font-size: 1.7em;
+    }
+    fieldset{
+     font-size: 1.2em;
+     margin-top: 0;
+     left: 70%;        
+   }
+   input{
+    margin-bottom: 13%;
+    font-size: 0.7em;
+  }
+  strong{
+    font-size: 1.5em;
+  }
+  main a img{
+    width: 125%;
+    margin-left: 0;
+    margin-top: 11%;
+  }
+  .left{
+    font-size: 1em;
+    width: 24%;
+    margin-left: 6%;
+  }
+  .slim_wrap{
+    height: 269px;
+  }
+  a{
+    width: 210px;
+    margin-left: -1%;
+    margin-top: -2%;
+  }
+  .orange img{
+    width: 50%;
+  }
+  .ten_days{
+    width: 43%;
+    font-size: 1em;
+  }
+  .pointer{
+    margin-left: -32px;
+  }
+  .pointer img{
+    width: 48%;
+  }
+  .photo{
+    width: 65px;
+  }
+  figcaption{
+    font-size: 0.8em;
+    width: 60%;
+  }
+  .name p{
+    font-size: 1.1em;
+  }
+}
+@media all and (min-width:320px) and (max-width:519px){
+  header{
+    line-height: 3em;
+    font-size: 0.6em;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size: 1.3em;
+  }
+  fieldset{
+    font-size: 1.3em;
+    margin-top: 316px;
+    left: 47%;        
+  }
+  input{
+    margin-bottom: 13%;
+    font-size: 0.7em;
+  }
+  strong{
+    font-size: 1.5em;
+  }
+  main a img{
+    width: 125%;
+    margin-left: 0;
+    margin-top: 11%;
+  }
+  .left{
+    font-size: 0.9em;
+    width: 26%;
+    margin-left: 6%;
+  }
+  .slim_wrap{
+    height: 269px;
+  }
+  a{
+    width: 167px;
+    margin-left: 0%;
+    margin-top: -2%;
+  }
+  .orange{
+    top: 73%;
+    left: 49%;
+  }
+  .orange img{
+    width: 95%;
+  }
+  .ten_days{
+    width: 32%;
+    font-size: 1.2em;
+    margin-top: 49%;
+    margin-left: 8px;
+  }
+  .pointer{
+    margin-left: 3px;
+    margin-top: 62%;
+    margin-bottom: 24%;
+  }
+  .pointer img{
+    width: 22%;
+  }
+  .photo{
+    width: 110px;
+  }
+  figcaption{
+    font-size: 0.9em;
+    width: 55%;
+  }
+  .name p{
+    font-size: 1.1em;
+  }
+  figure{
+   width: 100%;
+   margin-bottom: 50px;
+ }
+ .sliderB{
+  height: 650px;
+}
+.people{
+  margin-top: 13%;
+  width: 92%;
+}
+}

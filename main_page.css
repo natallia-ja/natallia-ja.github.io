@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about_me{
+  background-color: whitesmoke;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+h1{
+  font-size: 2em;
+}
+.name h1,.name h2{
+  color:  white;
+  text-align: left;
+  line-height: 1.3em;    
+ }
+.name h2{
+  font-size: 1.6em;
+}
+.first_screen{
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+.photo{
+  display: inline-block;
+}
+.photo img{
+  width: 50%;
+  border: 10px white solid;
+  border-radius: 50%;
+}
+.name{
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+}
+.about_me div{
+  display: inline-block;
+}
+.skills{
+  color: #205288;
+  width: 43%;
+  padding: 2% 5%;
+}
+.skills h2, .contacts h2{
+  display: inline-block;
+  color: #205288;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.examples h2{
+  display: inline-block;
+  color: #205288;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3%;
+}
+.skills p{
+  padding-bottom: 2%;
+}
+.skills ul{
+  display: inline-block;
+  width: 70%;
+}
+.skills b{
+  display: inline-block;
+}
+.picture{
+  position: absolute;
+  top: 16%;
+  padding-left: 0;
+}
+.examples{
+  width: 95%;
+  margin: auto;
+  margin-top: 3%;
+  background-color: whitesmoke;
+  padding: 2% 0;
+}
+
+.list a img{
+  display: inline-block;
+  width: 300px;
+  border: inset 10px #b9dce8;   
+}
+.list a{
+  display: inline-block;
+  position: relative;
+}
+.list{    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list li{
+  width: 30%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.text{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color:
+  #0a4682;
+  height: 100%;
+  opacity: 0;
+  color:
+  white;
+  font-size: 1.5em;
+  transition: all 0.5s ease 0.2s;
+}
+.list a:hover .text{
+  opacity: 1;
+  transition: all 0.5s ease 0.2s;
+}
+.text p{
+  margin-top:  30%;
+  padding: 0 2%;
+}
+.text span{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-size: 0.7em;
+}
+.contacts{
+  width: 95%;
+  margin: auto;
+  margin-top: 3%;
+  background-color: whitesmoke;
+  padding: 2% 0;
+  color: #205288;
+}
+.contacts div{
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.contacts h2{
+  padding-bottom: 1%;
+}
+main:after{
+  content: "";
+  display: block;
+  height: 8px;
+}
+
+@media all and (min-width:900px)and (max-width:1200px){
+  .list a img {    
+    width: 90%;
+  }
+  .text{
+    width: 96%;
+    height: 99%;
+    left: 2%;
+  }
+  .picture img{
+    width: 95%;
+  }
+    h1 {
+    font-size: 1.5em;
+  }
+  .name h2 {
+    font-size: 1.2em;
+  }
+  .name{
+    left: 70%;
+  }
+}
+
+@media all and (min-width:700px)and (max-width:899px){
+  .list a img {    
+    width: 90%;
+  }
+ .text{
+    width: 98%;
+    height: 98%;
+    left: 1%;
+  }
+  .picture img{
+    width: 95%;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  .name h2{
+    font-size: 1.2em;
+  }
+  .name{
+    left: 70%;
+  }
+  hr{
+    width: 75%;
+  }
+  .text p{
+    font-size: 0.8em;
+  }
+  .text span{
+    font-size: 0.5em;
+  }
+  .photo img{
+    width: 40%;
+  }
+  .skills ul{
+    width: 100%;
+  }
+}
+
+@media all and (min-width:320px)and (max-width:699px){
+  .list a img{    
+    width: 75%;
+  }
+ .text{
+    width: 98%;
+    height: 98%;
+    left: 1%;
+  }
+  .picture img{
+    width: 95%;
+  }
+    h1{
+    font-size: 1em;
+  }
+  .name h2 {
+    font-size: 1em;
+  }
+  .name{
+    left: 55%;
+    top: 30%;
+  }
+  hr{
+    width: 70%;
+  }
+  .text p{
+    font-size: 0.45em;
+    margin-top: 1%;
+  }
+  .text span {
+    font-size: 0.4em;
+  }
+  .photo img {
+    width: 40%;
+  }
+  .skills h2{
+    font-size: 1.2em;
+  }
+  .examples h2{
+    font-size: 1.2em;
+  }
+  .contacts h2{
+     font-size: 1.2em;
+  }
+  .contacts div{
+    font-size: 0.8em;
+  }
+  .picture{
+    position: relative;
+    padding-left: 10%;
+  }
+  .skills {
+    width: 94%;
+    font-size: 1em;
+  }
+  .about_me div{
+    font-size: 0.9em;
+  }
+  .first_screen{
+    text-align: left;
+  }
+  .skills ul{
+    width: 100%;
+  }
+}

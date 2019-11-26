@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>baner</title>
+
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			font-family: 'Atlantic Cruise';
+		}
+
+		@font-face {
+			font-family: 'Atlantic Cruise';
+			src: url(fonts/10858.otf); 
+		}
+		#baner{
+			width: 1500px; 
+			height: 360px;
+			overflow: hidden;		
+			line-height: 12px;
+			background-image: url(images/background.png);
+			overflow: hidden;
+			position: relative;		
+		}
+		
+		.bored_of_old_1{
+			position: absolute;
+			top: 20%;
+			color: #222c2f;
+			font-size: 2.8em;
+			animation: old_1 15s ease 1.4s infinite/*repeat amount*/ both;
+		}
+		@keyframes old_1{
+			0%  { left: -550px;}
+			3%  { left: -550px;}
+			10% { left: 5%;}
+			30% { left: 5%;}
+			35% {opacity: 1;}
+			38%{ opacity: 0;}
+			100%{ opacity: 0;}
+		}
+		.bored_of_old_2{
+			position: absolute;
+			top: 40%;	
+			color: #222c2f;		
+			font-size: 2.8em;
+			animation: old_2 15s ease 2.2s infinite both;
+		}
+		@keyframes old_2{
+			0%  { left: -550px;}
+			10% { left: 10%;}
+			29%{opacity: 1;}
+			30% { left: 10%;}
+			31%{ opacity: 0;}
+			100%{ opacity: 0;}
+		}
+		.bored_of_old_3{
+			position: absolute;
+			top: 60%;			
+			font-size: 2.3em;
+			animation: old_3 15s ease 2.5s infinite both;
+		}
+		@keyframes old_3{
+			0%  { left: -550px;}
+			10% { left: 5%;}
+			25%{opacity: 1;}
+			26%{ opacity: 0;}
+			30% { left: 5%;}
+			100%{ opacity: 0;}
+		}
+		.bored_of_old_3 span{	
+			background-color: #222c2f;
+			color: white;
+			font-size: 2.2em;
+		}
+		.dont_worry{
+			position: absolute;
+			top: 45%;
+			font-size: 7em;
+			left: 65%;
+			color: #ff5300;
+			animation: dont_worry 15s ease 4s infinite both;
+		}
+		@keyframes dont_worry{
+			0%  { opacity: 0}
+			10% {opacity: 1}
+			16%{opacity: 0}
+			100% {opacity: 0}
+		}
+		.tractor{
+			position: absolute;
+			top: 0;
+			animation: tractor 15s ease 5s infinite both;
+		}
+		@keyframes tractor{
+			0% { left: 1500px;}
+			25% { left: -1500px;}
+			100% { left: -1500px;}
+		}
+		.old{
+			position: absolute;
+			animation: old 15s ease 3s infinite both;
+		}
+		@keyframes old{
+			0%  { left: 0;}
+			23%  { left: 0;}
+			35%  { left: -1100px;}
+			100% { left: -1100px;}
+		}
+
+		.fridge_1{
+			position: absolute;
+			animation: fridge_1 15s ease 6s infinite/*repeat amount*/ both;
+		}
+		@keyframes fridge_1{
+			0%  { top: -500px;}
+			7% { top: -500px;}
+			10% { top: 0;}
+			70%{opacity: 1;}
+			72%{ opacity: 0;}
+			100%{ opacity: 0;}
+		}
+		.fridge_2{
+			position: absolute;
+			animation: fridge_2 15s ease 6.5s infinite/*repeat amount*/ both;
+		}
+		@keyframes fridge_2{
+			0%  { top: -500px;}
+			7% { top: -500px;}
+			10% { top: 0;}
+			66%{opacity: 1;}
+			68%{ opacity: 0;}
+			100%{ opacity: 0;}
+		}
+		.sale{
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			text-align: center;
+			line-height: 2em;
+			font-size: 35px;
+			color: #222c2f;
+			padding: 34px 2px;
+			animation: sale 15s ease 6.5s infinite/*repeat amount*/ both;
+		}
+		.sale_2{
+			position: absolute;
+			animation: sale 15s ease 6.5s infinite/*repeat amount*/ both;
+		}
+		@keyframes sale{
+			0% { opacity: 0;}
+			6% { opacity: 0;}
+			8% {opacity: 1;}
+			65%{opacity: 1;}
+			70%{ opacity: 0;}
+			100%{ opacity: 0;}
+		}
+		.sale span{
+			background-color: #ff5300;
+			color: white;
+		}
+		@media all and (min-width:992px) and (max-width:1500px){
+			#baner{
+				width: 935px;
+			}
+			.old img{
+				width: 935px;
+				margin-left: 10%;
+			}
+			.old{
+				top: 25%;
+			}
+			.bored_of_old_1{
+				font-size: 2em;
+			}
+			.bored_of_old_2{
+				font-size: 2em;
+			}
+			.bored_of_old_3{
+				font-size: 1.5em;
+			}
+			.sale{
+				line-height: 2.5em;
+				font-size: 25px;
+
+			}
+			.fridge_1 img{
+				width: 95%;
+				margin-top: 8%;
+				margin-left: 5%;
+			}
+			.fridge_2 img{
+				width: 95%;
+				margin-top: 8%;
+				margin-left: 5%;
+			}
+			.sale_2 img{
+				margin-left: -32%;
+			}
+			.dont_worry{
+				margin-left: 2%;
+			}
+		}
+		@media all and (min-width:768px) and (max-width:992px){
+			#baner{
+				width: 735px;
+			}
+			.old img{
+				width: 735px;
+				margin-left: 10%;
+			}
+			.old{
+				top: 25%;
+			}
+			.bored_of_old_1{
+				font-size: 2em;
+			}
+			.bored_of_old_2{
+				font-size: 2em;
+			}
+			.bored_of_old_3{
+				font-size: 1.2em;
+			}
+			.dont_worry{
+				font-size: 5em;
+				margin-left: 2%;
+			}
+			.sale{
+				line-height: 2.2em;
+				font-size: 20px;
+				margin-top: 5%;
+			}
+			.fridge_1 img{
+				width: 95%;
+				margin-top: 8%;
+				margin-left: 5%;
+			}
+			.fridge_2 img{
+				width: 95%;
+				margin-top: 8%;
+				margin-left: 5%;
+			}
+			.sale_2 img{
+				margin-left: -45%;
+				margin-top: 15%;
+				width: 153%;
+			}
+		}
+		@media all and (min-width:0) and (max-width:768px){
+			#baner{
+				width: 638px;
+				height: 150px;
+			}
+			.old img{
+				width: 638px;
+				height: 150px;	
+				margin-left: 10%;
+			}
+			.old{
+				top: 2%;
+			}
+			.bored_of_old_1{
+				font-size: 1.5em;
+			}
+			.bored_of_old_2{
+				font-size: 1.6em;
+			}
+			.bored_of_old_3{
+				font-size: 1em;
+			}
+			.tractor img{
+				width: 638px;
+				height: 150px;	
+			}
+			.dont_worry{
+				font-size: 4em;
+				margin-left: 2%;
+			}
+			.sale{
+				line-height: 2.2em;
+				font-size: 17px;
+				margin-top: -7%;
+			}
+			.fridge_1 img{
+				width: 95%;
+				margin-left: 5%;
+			}
+			.fridge_2 img{
+				width: 95%;
+				margin-left: 5%;
+			}
+			.sale_2 img{
+				margin-left: -7%;
+				margin-top: -1%;
+				width: 110%;
+			}
+			@keyframes tractor{
+				0%  { left: 1000px;}
+				35%  { left: -1000px;}
+				100% { left: -1000px;}
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="baner">
+		<div class="old"><img src="images/old.png"></div>
+		<div class="bored_of_old_1">Вышел из строя старый холодильник?</div>
+		<div class="bored_of_old_2">Или просто надоел?</div>
+		<div class="bored_of_old_3">но <span>ЦЕНЫ КУСАЮТСЯ?</span></div>
+		<div class="dont_worry">НЕ БЕДА!</div>
+		<div class="tractor"><img src="images/tractor.png"></div>
+		<div class="fridge_1"><img src="images/fridge_1.png"></div>
+		<div class="fridge_2"><img src="images/fridge_2.png"></div>
+		<div class="sale">
+			<span>Рассрочка</span> на холодильники Indesit <span>12 месяцев</span> без переплат.
+			<br>Акция действует <span>с 01.12 по 31.12</span>
+			<br>Пользуйтесь сейчас - а платите весь год!
+		</div>
+		<div class="sale_2"><img src="images/sale.png"></div>
+	</div>	
+</body>
+</html>

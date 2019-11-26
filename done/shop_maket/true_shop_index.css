@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main{
+  background-image: url(image/background.jpg);
+  background-repeat: no-repeat;
+  height: 560px;
+  background-size: cover;
+}
+.wrap{
+  background-color: hsla(0, 100%, 100%, 0.4);
+  height: 100%;
+}
+#submenu{
+  display: none;
+}
+#submenu>li{
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+#sub_submenu{
+  display: none;
+  width:1300px;
+  position: absolute;
+}
+span{
+  display: inline-block;
+  color: black;
+  font-size: 20px
+}
+#mainmenu>li{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  line-height: 37px;
+  background-color: rgba(189, 189, 189, 1);
+  font-size: 22px;
+}
+#mainmenu li a{
+  color: grey;
+  display: inline-block;
+  width: 100%;
+  border-bottom: solid 5px rgba(163, 0, 0, 0);
+  transition: all 0.1s ease 1s;
+}
+#submenu a{
+ color: grey;
+ display: inline-block;
+ width: 100%;
+}
+#mainmenu li a:hover{
+ color: rgba(163, 0, 0, 1);
+ border-bottom: solid 5px rgba(163, 0, 0, 1);
+ transition: all 0.1s ease 0.1s;
+}
+#mainmenu li:hover #submenu{
+  display: inline-block;
+  position: absolute;
+  top: 147px;
+  left: 0;
+  background-color: rgba(220, 220, 220, 1);
+  color: rgba(74, 74, 74, 1);
+  font-size: 15px;
+  width: 100%;
+}
+#submenu a:hover{
+  color: rgba(163, 0, 0, 1);
+  border-bottom: solid 5px rgba(163, 0, 0, 1);
+}
+#sub_submenu li{
+  border: solid 2px rgba(189, 189, 189, 0.7);
+  width: 250px;
+  background-color: rgba(189, 189, 189, 0.7);
+  height: 230px;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0.6;
+}
+#sub_submenu li:hover span{
+  color:  rgba(163, 0, 0, 1);
+}
+#sub_submenu img{
+  display: inline-block;
+  margin-bottom: -24px;
+}
+#submenu li:hover #sub_submenu{
+ position: absolute;
+ left: 0;
+ top: 42px;
+ display: flex;
+ flex-wrap: wrap;
+}
+#sub_submenu li:hover{
+  border: solid 2px rgba(163, 0, 0, 1);
+  opacity: 1;
+  background-color: rgba(218, 108, 110, 1);
+}
+
+
+
+
