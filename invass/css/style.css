@@ -11,11 +11,16 @@ html, body {
 }
 body{
 /*	background-image: url(../img/invacont_test.jpg);*/
-	background-image: url(../img/background_top.jpg);
+	/*background-image: url(../img/background_top.jpg);*/
+	background: url(../img/background_top.jpg) rgb(38, 49, 28);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100%;
-	background-color: rgb(38, 49, 28);
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-moz-background-size: 100%;
+	background-origin: border-box;
+	/*background-color: rgb(38, 49, 28);*/
 }
 /*.wrap{
 	background-color: rgba(255, 255, 255, 0.7);
