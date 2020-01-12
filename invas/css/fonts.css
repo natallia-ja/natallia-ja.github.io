@@ -1,0 +1,22 @@
+
+
+@font-face {
+  font-family: NimbusSan; 
+  src: url(../fonts/nimbstb-webfont.woff) format('truetype');
+}
+@font-face {
+  font-family: HelveticaNeueCyr_Black; 
+  src: url(../fonts/HelveticaNeueCyr-Black.otf);
+}
+@font-face {
+  font-family: NeoSansPro; 
+  src: url(../fonts/NeoSansPro.ttf);
+}
+@font-face {
+  font-family: HelveticaNeueCyr_Light; 
+  src: url(../fonts/HelveticaNeueCyr-Light.otf);
+}
+@font-face {
+  font-family: HelveticaNeueCyr_Bold; 
+  src: url(../fonts/HelveticaNeueCyr-Bold.otf);
+}
