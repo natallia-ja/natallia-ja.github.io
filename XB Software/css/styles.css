@@ -1,6 +1,5 @@
 
 body{
- /*background-color: rgb(33, 33, 33);*/
  background-color: rgba(222, 111, 0, 0.7);
 }
 
@@ -45,7 +44,7 @@ form{
 .cross{
 
   background-repeat: no-repeat;
-  background-image: url("cross.png");
+  background-image: url("../img/cross.png");
   background-size: cover;
   width: 20px;
   display: inline-block;
