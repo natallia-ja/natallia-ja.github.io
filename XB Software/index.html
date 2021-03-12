@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form>
+    <div class="form_heder">
+    <input id = "item" type="text" placeholder = "Add a tag" class="form_header_tag">
+    <div class="button form_header_tag" onclick="addTag()">Save</div>
+    </div>
+    <p class="readonly"><input id='readonly' type="checkbox" onclick = "toggleChecked()"/>Запретить редактирование</p>
+
+  
+    <div id = "tags_area"></div>
+  </form>
+<script src="script.js"></script>
+</body>
+</html>
