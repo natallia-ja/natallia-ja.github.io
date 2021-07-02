@@ -1,0 +1,67 @@
+
+body{
+ background-color: rgba(222, 111, 0, 0.7);
+}
+
+form{
+  border: solid 1px grey;
+  border: solid 1px grey;
+  width: 30%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 3%;
+  background-color: rgb(222, 222, 222);
+
+}
+.form_heder{
+  display: flex;
+  justify-content: space-between;
+}
+.form_header_tag{
+  width: 45%;
+  border-radius: 5px;
+}
+
+
+.button{
+  height: 30px;
+  background-color: rgb(145, 0, 0);
+  color: white;
+  text-align: center;
+  line-height: 27px;
+  font-size: 20px;
+}
+.tag{
+ background-color: rgb(230, 230, 230);
+ margin: 10px auto;
+ padding: 5px;
+ border: solid 1px  rgb(33, 33, 33);
+ border-radius: 5px;
+ position: relative;
+ width: 80%;
+ font-size: 18px;
+}
+.cross{
+
+  background-repeat: no-repeat;
+  background-image: url("../img/cross.png");
+  background-size: cover;
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+
+}
+
+.readonly{
+  text-align: center;
+}
+
+#tags_area{
+  background-color: white;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 5px;
+  text-align: center;
+
+}
