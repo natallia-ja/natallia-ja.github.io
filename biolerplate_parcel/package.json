@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html -- open",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/natallia-ja/natallia-ja.github.io/biolerplate_parcel.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  }
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.2"
+  },
+  "homepage": "https://github.com/natallia-ja/natallia-ja.github.io/biolerplate_parcel#readme"
 }
