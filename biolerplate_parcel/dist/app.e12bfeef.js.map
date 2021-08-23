@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/javascript/app.js"],"names":["console","info"],"mappings":"AAAAA,OAAO,CAACC,IAAR,CAAa,OAAb","file":"app.e12bfeef.js","sourceRoot":"..","sourcesContent":["console.info(\"hello\")"]}

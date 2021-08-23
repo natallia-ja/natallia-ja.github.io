@@ -1,0 +1,451 @@
+*{
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
+body{
+	background-color: rgb(248, 248 ,248);
+
+}
+
+.header{ 
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 50;  
+	background-color: rgb(248, 248 ,248);
+}
+
+.header:before{ 
+	content: '';
+	position: absolute;
+	top: 92px;
+	left: 0;
+	width: 100%;
+	height: 34%;
+	background-color: rgb(40, 41, 35);
+	z-index: 2;
+}
+
+.info{
+	font-size: 1.1rem;
+}
+
+
+.logo{
+	width: 125px;
+}
+
+.contacts{
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav{
+	background-color: rgb(40, 41, 35);
+	font-size: 1.2rem;	
+}
+
+.header__burger{
+	display: none;
+}
+
+.menu{
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	position: relative; 
+	z-index: 2;	
+}
+
+.menu_item{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.menu_item_a{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+	
+}
+
+.menu_item_a:hover{
+	background-color: white;
+	color: rgb(196, 0, 0);
+	border: 2px rgb(40, 41, 35) inset;
+}
+
+.vh-dependent{
+	height: 55vh;
+	display: flex;
+	align-items: center;
+}
+
+.be-static{
+	position: static;
+}
+
+main{
+	padding: 150px 0 0 0;
+}
+
+.section_news-cont__img{
+	background: url('../img/img4.jpg') no-repeat right top;
+	background-size: 50% 100%;
+	position: absolute;
+	right: 0;
+	width: 59%;
+	height: 50vh;
+	margin-top: 50px;
+}
+
+.btn{
+	color: #fff;
+	background: rgb(40, 41, 35);;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 13px 26px;
+	display: inline;
+	border-radius: 0;
+	letter-spacing: 0.3em;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+.section_delivery{
+	margin-top: 10vh;
+}
+
+
+.section_delivery-cont__img{
+	width: 50%;
+	background: url('../img/img5.jpg') no-repeat left top / 80% 70%;
+	height: 60vh;
+	position: absolute;
+	left: 0;
+}
+
+.section_about{
+	padding-top: 6vh;
+}
+
+.section_about h1{
+	display: inline-block;
+}
+
+.d_none{
+	display: none;
+}
+
+.modal_message{
+	background-color: rgb(126, 214, 133);
+	color: rgb(0, 98, 0);
+	margin-top: 5px;
+}
+
+.section_modal_request{
+	text-align: center;
+}
+
+footer{
+	background-color: rgb(40, 41, 35);	
+	color: white;
+	margin-top: 5%;
+	height: 60px;
+}
+
+
+@media all and (max-width: 1199px){
+
+	.section_news-cont__img{
+		width: 71%;
+	}
+}
+
+@media all and (max-width: 991px){
+	
+	h1{
+		font-size: 1.8rem;
+	}
+
+	.section_about{
+		padding-top: 10vh;	
+	}
+
+	.section_delivery{
+		margin-top: 10vh;
+	}
+
+}
+
+@media all and (max-width: 767px){ 
+	
+	body{
+		font-size: 0.8rem;
+	}
+
+
+	.info{
+		font-size: 1rem;
+	}
+
+	.nav{	
+		z-index: 3;
+	}
+
+	.header__burger{ 
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 4;
+		top: 8px;
+	}
+
+	.header__burger:before, .header__burger:after{ 
+		content: '';
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger:before{	
+		top: 0;
+	}
+
+	.header__burger:after{
+		bottom: 0;
+	}
+
+	.header__burger span{
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.header__burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.header__menu{
+		position: fixed;
+		top: 0;
+		left: -110%;
+		width: 100%;
+		height: 100%;
+		padding: 130px 30px 0 0;
+		transition: all 0.3s ease 0s;
+		z-index: 3;
+	}
+
+	.header__menu.active{
+		top: 0;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.menu_item{
+		background-color: rgb(40, 41, 35);
+	}
+
+	h1{
+		font-size: 1.3rem;
+	}
+
+	.section_delivery{
+		margin-top: 15vh;
+	}
+
+	.section_about{
+		padding-top: 6vh;	
+	}
+
+	.section_news{
+		margin-top: 10vh;
+	}
+
+	.section_news-cont__img{
+		width: 89%;
+	}
+
+	.vh-dependent{
+		height: 40vh;
+	}
+
+
+}
+
+@media all and (max-width: 575px) and (min-width: 350px){
+	
+	body{
+		font-size: 0.8rem;
+	}
+
+	.logo{
+		width: 100px;
+	}
+
+	.contacts{
+	display: block;
+	text-align: end;
+	}
+
+	.info{
+		font-size: 0.7rem;
+	}
+
+	.nav{
+		z-index: 3;
+		font-size: 1rem;
+	}
+
+	.header__burger{ 
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 4;
+		top: 14px;
+		left: 10px;
+	}
+
+	.header__burger:before, .header__burger:after{ 
+		content: '';
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger:before{	
+		top: 0;
+	}
+
+	.header__burger:after{
+		bottom: 0;
+	}
+
+	.header__burger span{
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.header__burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.header__menu{
+		position: fixed;
+		top: 0;
+		left: -110%;
+		width: 100%;
+		height: 100%;
+		padding: 121px 30px 0 0;
+		transition: all 0.3s ease 0s;
+		z-index: 3;
+	}
+
+	.header__menu.active{
+		top: 0;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.menu_item{
+		background-color: rgb(40, 41, 35);
+	}
+
+	h1{
+		font-size: 1.2rem;
+	}
+
+	.section_delivery{
+		margin-top: 12vh;
+	}
+
+	.section_delivery-cont{
+		margin-top: 0;
+	}
+
+	.section_delivery-cont__img{
+		height: 30vh;
+		background: url('../img/img5.jpg') no-repeat center top / 80% 70%;
+		left: 25vw;
+	}
+
+	.section_about{
+		padding-top: 3vh;	
+	}
+
+	.section_news{
+		margin-top: 5vh;
+	}
+
+	.section_news-cont__img{
+		margin-top: 0;
+		height: 30vh;
+		background-size: 80% 80%;
+		width: 60%;
+	}
+
+	.vh-dependent{
+		height: 30vh;
+	}
+
+	.btn{
+		font-size: 10px;
+		padding: 10px;
+	}
+
+}
